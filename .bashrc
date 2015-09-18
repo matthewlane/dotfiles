@@ -12,7 +12,7 @@ export PATH=/usr/local/bin:$PATH:$HOME/bin
 export CLICOLOR=1
 
 # Git
-source ~/.git-completion.bash
+source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
