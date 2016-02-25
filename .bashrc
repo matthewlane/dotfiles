@@ -8,7 +8,7 @@ alias path='echo $PATH | tr : "\n"'
 alias reload='source ~/.bashrc'
 
 # Exports
-export PATH=/usr/local/bin:$PATH:$HOME/bin
+export PATH=/usr/local/bin:node_modules/.bin:$PATH:$HOME/bin
 export CLICOLOR=1
 
 # Git
@@ -18,12 +18,3 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
 source /usr/local/bin/virtualenvwrapper.sh
-
-# Functions
-function django {
-    if [[ "$1" == new* ]]; then
-        django-admin startproject "${@:2}";
-    else
-        python manage.py "$@";
-    fi
-}
