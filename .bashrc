@@ -18,3 +18,6 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Powerline
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
